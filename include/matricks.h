@@ -7,8 +7,8 @@
 #define _MTK_STR_ROW_NEG "[%s] row provided is out of bounds: given [%d], min [1]"
 #define _MTK_STR_COL_NEG "[%s] col provided is out of bounds: given [%d], min [1]"
 
-#define _MTK_STR_SUM_NOT_EQUAL "cannot sum matrickses of diff sizes [%d]x[%d] + [%d]x[%d]"
-#define _MTK_STR_MULT_DIM "cannot mult matrickses cols != rows [%d]x{%d} * {%d}x[%d]"
+#define _MTK_STR_SUM_NOT_EQUAL "[%s] cannot sum matrickses of diff sizes [%d]x[%d] + [%d]x[%d]"
+#define _MTK_STR_MULT_DIM "[%s] cannot mult matrickses of cols != rows [%d]x{%d} * {%d}x[%d]"
 
 typedef struct {
 
@@ -48,4 +48,5 @@ Matricks* mtk_get_transpose(Matricks *m);
 
 /* ---- utility ---- */
 
+void mtk_free(Matricks* m);
 void mtk_print(const Matricks* m);
