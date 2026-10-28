@@ -40,6 +40,18 @@ void _mtk_check_bounds(const Matricks* m, int row, int col, const char* func_nam
 
 }
 
+void _mtk_check_sum_dimensions(const Matricks* m1, const Matricks* m2, const char* func_name) {
+
+
+
+}
+
+void _mtk_check_mult_dimensions(const Matricks* m1, const Matricks* m2, const char* func_name) {
+
+
+
+}
+
 /* creation */
 
 Matricks* mtk_new_matricks(int rows, int cols) {
@@ -78,6 +90,30 @@ double mtk_get(const Matricks* m, int row, int col) {
     return m->data[(row * m->cols) + col];
 
 }
+
+Matricks* mtk_sum_matrickses(Matricks* m1, Matricks* m2) {
+
+
+
+};
+
+Matricks* mtk_sub_matrickses(Matricks* m1, Matricks* m2) {
+
+
+
+};
+
+Matricks* mtk_mult_scalar(Matricks* m1, double s) {
+
+
+
+};
+
+Matricks* mtk_mult_matrickses(Matricks* m1, Matricks* m2) {
+
+
+
+};
 
 /* utility */
 
