@@ -26,6 +26,7 @@ void _mtk_check_mult_dimensions(const Matricks* m1, const Matricks* m2, const ch
 /* ---- creation ---- */
 
 Matricks* mtk_new_matricks(int rows, int cols);
+Matricks* mtk_identity(int size);
 
 /* ---- user usage ---- */
 

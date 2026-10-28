@@ -21,6 +21,7 @@ void populate_matricks(Matricks* m) {
 
 int main(void) {
 
+    /*
     Matricks* matrickses[] = {
 
         mtk_new_matricks(3, 3),
@@ -39,7 +40,17 @@ int main(void) {
 
     }
 
-    Matricks* sum = mtk_sum_matrickses(matrickses[0], matrickses[1]);
-    mtk_print(sum);
-    
+    Matricks* mult = mtk_mult_matrickses(matrickses[0], matrickses[1]);
+    mtk_print(matrickses[0]);
+    printf("\n");
+    mtk_print(matrickses[1]);
+    printf("\n");
+    mtk_print(mult);
+    */
+
+    Matricks* m1 = mtk_from_values(2, 2,
+    1.0, 2.0,
+    3, 4);    
+    mtk_print(m1);
+
 }

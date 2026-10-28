@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <stdarg.h>
 
 /* internal usage */
 
@@ -73,6 +74,17 @@ Matricks* mtk_new_matricks(int rows, int cols) {
     new->data = malloc(allocate_for_array);
 
     memset((void*) new->data, 0, allocate_for_array);
+    return new;
+
+}
+
+Matricks* mtk_identity(int size) {
+
+    Matricks* new = mtk_new_matricks(size, size);
+
+    for (int i = 1; i <= size; i++)
+        mtk_set(new, i, i, 1.0);
+
     return new;
 
 }
